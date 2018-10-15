@@ -1,6 +1,7 @@
 body, html {
   height: 100%;
   display: grid;
+  font-family: 'Raleway', sans-serif;
 }
 span {
   margin: auto;
@@ -9,15 +10,15 @@ span {
 a {
   text-decoration: none;
   color: #333;
+  font-family: 'terminal_grotesque';
+  
 }
 
 #sayhi {
-  font-family: 'terminal_grotesque';
-  font-size: 9rem;
   margin: auto;
 }
 
-#sayhi:hover {
+a:hover {
   opacity: 0;
   animation: ablink 0.06s linear infinite;
 }
