@@ -1,0 +1,24 @@
+{
+  "name": "johndlopez.github.io",
+  "version": "1.0.0",
+  "description": "Simple contact page for my personal website.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndlopez/johndlopez.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johndlopez/johndlopez.github.io/issues"
+  },
+  "homepage": "https://github.com/johndlopez/johndlopez.github.io#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "usabilla-api": "^1.2.3"
+  }
+}
