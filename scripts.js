@@ -15,6 +15,7 @@ function usabilla_live(e, object) {
 window.usabilla_live = usabilla_live;
 
 function implementExperimentA(value, name) {
+  console.log(value, name);
   const custom = {
     name,
     value
@@ -22,12 +23,15 @@ function implementExperimentA(value, name) {
   const customVariables = { custom };
     if (value ==  '0') {
     // Provide code for visitors in the original.
+    console.log('Default version executed');
     window.usabilla_live('data', customVariables);
   } else if (value == '1') {
     // Provide code for visitors in first variant
+    console.log('First varient executed');
     window.usabilla_live('data', customVariables);
   } else if (value == '2') {
     // Provide code for visitors in second variant.
+    console.log('Second varient executed');
     window.usabilla_live('data', customVariables);
   }
 }
