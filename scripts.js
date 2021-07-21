@@ -50,7 +50,7 @@ function implementExperimentA(value, name) {
 //   callback: implementExperimentA,
 // })
    
-gtag('event', 'optimize.callback', {
+gtag('load', 'optimize.callback', {
     name: '',
     callback: implementExperimentA
  });
