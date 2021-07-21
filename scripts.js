@@ -14,6 +14,8 @@ function usabilla_live(e, object) {
 
 window.usabilla_live = usabilla_live;
 
+const contactButton = document.querySelector('.contact');
+
 function implementExperimentA(value, name) {
   console.log(value, name);
   const custom = {
@@ -27,10 +29,12 @@ function implementExperimentA(value, name) {
     window.usabilla_live('data', customVariables);
   } else if (value == '1') {
     // Provide code for visitors in first variant
+    contactButton.classList.add('red');
     console.log('First varient executed');
     window.usabilla_live('data', customVariables);
   } else if (value == '2') {
     // Provide code for visitors in second variant.
+    contactButton.classList.add('pink');
     console.log('Second varient executed');
     window.usabilla_live('data', customVariables);
   }
